@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Média Escolar</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <h2>Verificação de Aprovação</h2>
+
+    <form method="POST" action="Media.php">
+        <label>Nome do Aluno:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Nota 1:</label><br>
+        <input type="number" name="nota1" step="0.01" required><br><br>
+
+        <label>Nota 2:</label><br>
+        <input type="number" name="nota2" step="0.01" required><br><br>
+
+        <label>Presença (%):</label><br>
+        <input type="number" name="presenca" min="0" max="100" required><br><br>
+
+        <button type="submit">Calcular Resultado</button>
+    </form>
+</body>
+</html>
