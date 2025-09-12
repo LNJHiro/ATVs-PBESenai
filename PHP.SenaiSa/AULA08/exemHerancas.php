@@ -37,3 +37,11 @@ class Apartamento extends Imovel {
 
     }
 }
+class Comercio extends Imovel {
+    private $Tamanho;
+
+    public function __construct($Categoria, $N_comodos, $Valor, $Estado_conservacao, $Tamanho) {
+        parent::__construct($Categoria, $N_comodos, $Valor, $Estado_conservacao);
+        $this->Tamanho = $Tamanho;
+    }
+}
