@@ -1,3 +1,14 @@
+<!--
+ Polimorfismo
+
+O termo Polimorfimo significa "varias formas".
+Associando isso a Programaçao Orientada a Objetos, o 
+ conceito se trata de varias classes e suas instancias (objetos) respondendo a uma mesmo metodo de formas diferentes. 
+No exemplo do Interface da Aula_09, termos um metodo calcularArea() que responde de froma diferentes a classe Quadrado , a classe Pentagono
+a  classe Circulo . Isso quer dizer que a funçao é a mesma - calcular a area da forma geometrica - mas a operaçao musa de acordo com a figura.
+
+Crie um metodo chamado "mover()", onde ele responde a varias formas diferente, para as sub-classes: Carro, Aviao, Barco e Elevador. Dica: Utilize Interfaces. -->
+
 <?php
 
 
@@ -35,15 +46,17 @@ class Elevador implements Veiculo {
 }
 
 // ===== Criando objetos de teste =====
-$carro = new Carro();
-$aviao = new Aviao();
-$barco = new Barco();
-$elevador = new Elevador();
+$carro1 = new Carro();
+$carro1 -> nome = "Civic";
 
-// Testando individualmente
-echo "=== Testando objetos individualmente ===\n";
-$carro->Mover();
-$aviao->Mover();
-$barco->Mover();
-$elevador->Mover();
+$aviao1 = new Aviao();
+$aviao1 -> nome = "voo 175 United Airlines";
+
+$barco1 = new Barco();
+$barco1 -> nome = "Titanic";
+
+$elevador1 = new Elevador();
+$elevador1 -> nome = "Elevador Central";
+
+
 ?>
